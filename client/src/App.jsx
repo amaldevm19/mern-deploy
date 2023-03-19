@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 function App() {
     const [message, setMessage] = useState("");
     useEffect(()=>{
-        fetch("http://localhost:4000")
+        fetch("https://my-mern-deploy.onrender.com/")
             .then(res => res.json())
             .then(data => setMessage(data.message))
             .catch(err => console.log(err));
